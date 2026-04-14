@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000";
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const SPEED_OPTIONS = [

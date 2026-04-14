@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 const API_BASE = import.meta.env.VITE_API_BASE || "https://your-ngrok-url.ngrok-free.dev";
+console.log("API BASE:", API_BASE);
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const SPEED_OPTIONS = [
